@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img{
+				width: 500px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				
+				/* 滤镜属性 grayscale设置灰度 1是百分之百*/
+				-webkit-filter: grayscale(1);
+				
+				/* 过渡效果 */
+				transition: all 2s; 
+				
+			}
+			/* 滤镜属性 grayscale设置灰度 1是百分之百*/
+			.img1:hover{
+				-webkit-filter: none;
+				cursor: pointer;
+			}
+			/* 滤镜属性 brightness设置亮度 1是默认值*/
+			.img2:hover{
+				-webkit-filter:brightness(0);
+				cursor: pointer;
+			}
+			/* 滤镜属性 sepia设置褐度 1是默认值100%*/
+			.img3:hover{
+				-webkit-filter:sepia(1);
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="./img/1.jfif" alt="">
+		<img class="img2" src="./img/1.jfif" alt="">
+		<img class="img3" src="./img/1.jfif" alt="">
+	</body>
+</html>
